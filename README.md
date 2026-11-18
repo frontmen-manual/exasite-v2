@@ -41,3 +41,9 @@ python3 -m http.server 8000
 ## Тестові дані
 
 Контакт підтримки в `site/data/meta.js` (`HC.support`) — тестовий, замінити перед показом клієнтам.
+
+## Публікація (GitHub Pages)
+
+Кожен push у гілку `master` автоматично публікує папку `site/` на GitHub Pages (`.github/workflows/pages.yml`).
+Одноразово в репозиторії: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+Адреса: `https://frontmen-manual.github.io/exasite-v2/`.
