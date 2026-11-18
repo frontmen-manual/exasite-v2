@@ -47,3 +47,5 @@ python3 -m http.server 8000
 Репозиторій публічний; GitHub Pages: **Settings → Pages → Deploy from a branch → `master` / `(root)`**.
 Кореневий `index.html` переадресовує на `site/`. Будь-який push у `master` оновлює сайт за 1–2 хв.
 Workflow `.github/workflows/pages.yml` — запасний варіант (Source: GitHub Actions), запускається лише вручну.
+
+Сторінки мають `<meta name="robots" content="noindex, nofollow">` (у `<head>`): пошукові системи не показують сайт у результатах; за прямим посиланням він відкривається. Сам публічний репозиторій GitHub індексує окремо.
