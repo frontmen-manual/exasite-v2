@@ -1,0 +1,75 @@
+/* Exasite Help Center — структура центру допомоги.
+   Контент статей лежить у content-exa01…04.js, демонстрації — у demos.js.
+   Щоб оновити інструкцію, змініть дані в цих файлах; верстку (app.js) чіпати не потрібно. */
+window.HC = window.HC || { articles: [], demos: {} };
+
+HC.meta = {
+  product: 'Exasite',
+  updated: '11.11.2026',
+  sources: [
+    { code: 'EXA-01', title: 'Початок роботи з Exasite', version: 'UA v1.9', en: 'EN v1.9', status: 'Погоджено (v1.8) + правило нових термінів (v1.9)', url: 'https://docs.google.com/document/d/1JGp9Gw5s0mONuU7V8FdFkqvO0p8m2DkK-9eiT1KL344/edit' },
+    { code: 'EXA-02', title: 'Структура сайту', version: 'UA v1.1', en: 'EN v1.1', status: 'Погоджено (v1.0) + правило нових термінів (v1.1)', url: 'https://docs.google.com/document/d/1Fip95Z9_eacCUobJaSf1LSiApBy0nWrLtNiiyPbiuaA/edit' },
+    { code: 'EXA-03', title: 'Керування сторінками', version: 'UA v1.1', en: 'EN v1.1', status: 'Погоджено (v1.0) + правило нових термінів (v1.1)', url: 'https://docs.google.com/document/d/1Y67lNz5IzFrJw9VjMtq2s9tN1CxB9AZj58VmwOY4NzM/edit' },
+    { code: 'EXA-04', title: 'Конструктор сторінок', version: 'UA v1.0', en: 'EN v1.0', status: 'Погоджено (UA v1.0, 11.11.2026); EN v1.0 — на перевірці', url: 'https://docs.google.com/document/d/1R-71KDWOpV3vEgTm59QSze8W_3l9BAw6fuY_3mwmvwg/edit' }
+  ],
+  /* Розділи посібника, які згадуються в тексті, але ще не написані */
+  planned: {
+    'EXA-05': 'Сітка, відступи й адаптивність',
+    'EXA-06': 'Снапшоти',
+    'EXA-07': 'Мовні версії та переклади',
+    'EXA-08': 'Тексти й медіа',
+    'EXA-09': 'Редиректи, адреси та SEO',
+    'EXA-10': 'Бази даних',
+    'EXA-11': 'Користувачі та права доступу',
+    'EXA-12': 'Перегляд і публікація',
+    'EXA-X': 'Кастомні блоки вашого проєкту (додаток)'
+  }
+};
+
+HC.categories = [
+  { id: 'start', code: 'EXA-01', title: 'Початок роботи', icon: 'compass',
+    desc: 'Вхід, робочий простір, навігація та перевірка сторінок. Перший рівень роботи з платформою.' },
+  { id: 'structure', code: 'EXA-02', title: 'Структура сайту', icon: 'tree',
+    desc: 'Дерево сторінок, екран «Мапа сайту», мовні версії та створення нової сторінки.' },
+  { id: 'pages', code: 'EXA-03', title: 'Керування сторінками', icon: 'sliders',
+    desc: 'Назва, адреса, активність, шаблон і місця показу сторінки на сайті.' },
+  { id: 'builder', code: 'EXA-04', title: 'Конструктор сторінок', icon: 'blocks',
+    desc: 'Зони, блоки, мікроблоки, снапшоти й основи відступів.' }
+];
+
+/* Швидкий старт: послідовність першого рівня (знайти сторінку → змінити текст чи фото → перевірити результат) */
+HC.quickstart = {
+  title: 'Швидкий старт',
+  lead: 'Дев’ять коротких уроків першого рівня. Після них ви зможете знайти потрібну сторінку, змінити текст або фотографію й перевірити результат. Більше для щоденних оновлень не потрібно.',
+  lessons: [
+    { slug: 'welcome', note: 'Що вміє платформа і які в неї рівні редагування' },
+    { slug: 'platform-basics', note: 'Сторінка → Зона → Блок → Елемент' },
+    { slug: 'login', note: 'Перший вхід і що робити, якщо не вдається' },
+    { slug: 'workspace', note: 'Де розташовані панелі та кнопки' },
+    { slug: 'open-page', note: 'Як дістатися до потрібної сторінки', demo: 'open-page' },
+    { slug: 'edit-text', note: 'Як замінити текст і змінити стиль заголовка' },
+    { slug: 'replace-image', note: 'Як замінити фото через фотобанк', demo: 'replace-image' },
+    { slug: 'desktop-mobile', note: 'Як подивитися сторінку у вузькому представленні', demo: 'visitor-check' },
+    { slug: 'visitor-preview', note: 'Фінальна перевірка без службових рамок' }
+  ]
+};
+
+/* Популярні сценарії на головній — лише дії, описані в інструкції */
+HC.popular = [
+  { slug: 'open-page', title: 'Знайти й відкрити сторінку', icon: 'find' },
+  { slug: 'edit-text', title: 'Змінити текст або заголовок', icon: 'text' },
+  { slug: 'replace-image', title: 'Замінити зображення', icon: 'image' },
+  { slug: 'create-page', title: 'Створити нову сторінку', icon: 'newpage' },
+  { slug: 'page-language-options', title: 'Увімкнути сторінку на сайті', section: 'active', icon: 'eye' },
+  { slug: 'add-microblock', title: 'Додати блок на сторінку', icon: 'blocks' },
+  { slug: 'desktop-mobile', title: 'Перевірити сторінку на смартфоні', icon: 'phone' },
+  { slug: 'page-language-options', title: 'Змінити адресу сторінки', section: 'alias', icon: 'link' }
+];
+
+/* Контакт підтримки проєкту. ТЕСТОВІ ДАНІ — замініть на реальні ім’я та email менеджера. */
+HC.support = {
+  name: 'Ім’я Прізвище',
+  role: { uk: 'Менеджер проєкту', en: 'Project manager' },
+  email: 'manager@example.com',
+  test: true
+};
