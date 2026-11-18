@@ -1,9 +1,12 @@
-# Публікація центру допомоги (папка site/) на GitHub Pages при кожному push у master.
+# Публікація центру допомоги (папка site/) на GitHub Pages.
+# НА ПАУЗІ (рішення 18.11.2026): доступ для сторонніх поки не відкриваємо.
+# Автозапуск при push вимкнено; запуск лише вручну (Actions → Run workflow), коли буде рішення про хостинг.
+# Щоб увімкнути автопублікацію знову, поверніть блок:
+#   push:
+#     branches: [master]
 name: Deploy help center to GitHub Pages
 
 on:
-  push:
-    branches: [master]
   workflow_dispatch:
 
 permissions:

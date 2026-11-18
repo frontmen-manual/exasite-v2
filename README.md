@@ -44,6 +44,5 @@ python3 -m http.server 8000
 
 ## Публікація (GitHub Pages)
 
-Кожен push у гілку `master` автоматично публікує папку `site/` на GitHub Pages (`.github/workflows/pages.yml`).
-Одноразово в репозиторії: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-Адреса: `https://frontmen-manual.github.io/exasite-v2/`.
+**На паузі (18.11.2026):** доступ для сторонніх поки не відкриваємо. Репозиторій приватний, автопублікацію вимкнено.
+Workflow `.github/workflows/pages.yml` запускається лише вручну. Варіанти, коли буде рішення: зробити репозиторій публічним і ввімкнути GitHub Pages (Settings → Pages → Source: GitHub Actions; адреса `https://frontmen-manual.github.io/exasite-v2/`) або підключити Cloudflare Pages / Netlify (output directory `site`).
