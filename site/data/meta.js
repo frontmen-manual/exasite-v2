@@ -7,10 +7,10 @@ HC.meta = {
   product: 'Exasite',
   updated: '11.11.2026',
   sources: [
-    { code: 'EXA-01', title: 'Початок роботи з Exasite', version: 'UA v1.9', en: 'EN v1.9', status: 'Погоджено (v1.8) + правило нових термінів (v1.9)', url: 'https://docs.google.com/document/d/1JGp9Gw5s0mONuU7V8FdFkqvO0p8m2DkK-9eiT1KL344/edit' },
-    { code: 'EXA-02', title: 'Структура сайту', version: 'UA v1.1', en: 'EN v1.1', status: 'Погоджено (v1.0) + правило нових термінів (v1.1)', url: 'https://docs.google.com/document/d/1Fip95Z9_eacCUobJaSf1LSiApBy0nWrLtNiiyPbiuaA/edit' },
-    { code: 'EXA-03', title: 'Керування сторінками', version: 'UA v1.1', en: 'EN v1.1', status: 'Погоджено (v1.0) + правило нових термінів (v1.1)', url: 'https://docs.google.com/document/d/1Y67lNz5IzFrJw9VjMtq2s9tN1CxB9AZj58VmwOY4NzM/edit' },
-    { code: 'EXA-04', title: 'Конструктор сторінок', version: 'UA v1.0', en: 'EN v1.0', status: 'Погоджено (UA v1.0, 11.11.2026); EN v1.0 — на перевірці', url: 'https://docs.google.com/document/d/1R-71KDWOpV3vEgTm59QSze8W_3l9BAw6fuY_3mwmvwg/edit' }
+    { code: 'EXA-01', title: 'Початок роботи з Exasite', version: 'UA v1.9', en: 'EN v1.9', status: 'Погоджено (v1.8) + правило нових термінів (v1.9)', url: '' },
+    { code: 'EXA-02', title: 'Структура сайту', version: 'UA v1.1', en: 'EN v1.1', status: 'Погоджено (v1.0) + правило нових термінів (v1.1)', url: '' },
+    { code: 'EXA-03', title: 'Керування сторінками', version: 'UA v1.1', en: 'EN v1.1', status: 'Погоджено (v1.0) + правило нових термінів (v1.1)', url: '' },
+    { code: 'EXA-04', title: 'Конструктор сторінок', version: 'UA v1.0', en: 'EN v1.0', status: 'Погоджено (UA v1.0, 11.11.2026); EN v1.0 — на перевірці', url: '' }
   ],
   /* Розділи посібника, які згадуються в тексті, але ще не написані */
   planned: {

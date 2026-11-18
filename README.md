@@ -44,5 +44,6 @@ python3 -m http.server 8000
 
 ## Публікація (GitHub Pages)
 
-**На паузі (18.11.2026):** доступ для сторонніх поки не відкриваємо. Репозиторій приватний, автопублікацію вимкнено.
-Workflow `.github/workflows/pages.yml` запускається лише вручну. Варіанти, коли буде рішення: зробити репозиторій публічним і ввімкнути GitHub Pages (Settings → Pages → Source: GitHub Actions; адреса `https://frontmen-manual.github.io/exasite-v2/`) або підключити Cloudflare Pages / Netlify (output directory `site`).
+Репозиторій публічний; GitHub Pages: **Settings → Pages → Deploy from a branch → `master` / `(root)`**.
+Кореневий `index.html` переадресовує на `site/`. Будь-який push у `master` оновлює сайт за 1–2 хв.
+Workflow `.github/workflows/pages.yml` — запасний варіант (Source: GitHub Actions), запускається лише вручну.

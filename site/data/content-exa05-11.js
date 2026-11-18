@@ -2542,7 +2542,7 @@ HC.meta.sources.push(...[
   "version": "UA v0.1",
   "en": "—",
   "status": "Чернетка на перегляді (12.11.2026)",
-  "url": "https://docs.google.com/document/d/1Dgz2eab3RXm8P0lLUTftYSqbjZGljukxFAQeEez43-A/edit"
+  "url": ""
  },
  {
   "code": "EXA-08",
@@ -2550,7 +2550,7 @@ HC.meta.sources.push(...[
   "version": "UA v0.1",
   "en": "—",
   "status": "Чернетка на перегляді (12.11.2026)",
-  "url": "https://docs.google.com/document/d/1iVvPwZmY3c8RwDj5LqqqEEarbuEAqyJi8Np_Jdgj3_s/edit"
+  "url": ""
  },
  {
   "code": "EXA-09",
@@ -2558,7 +2558,7 @@ HC.meta.sources.push(...[
   "version": "UA v0.1",
   "en": "—",
   "status": "Чернетка на перегляді (12.11.2026)",
-  "url": "https://docs.google.com/document/d/1bDrm4nvEOJU0sROc6AhXJLMmfeo8k74ka-4eap8GVEc/edit"
+  "url": ""
  },
  {
   "code": "EXA-10",
@@ -2566,7 +2566,7 @@ HC.meta.sources.push(...[
   "version": "UA v0.1",
   "en": "—",
   "status": "Чернетка на перегляді (12.11.2026)",
-  "url": "https://docs.google.com/document/d/1Tnv5rb6tDuE3kVFUW6eYS7vcodxDpxf44wO7ifHDlLQ/edit"
+  "url": ""
  },
  {
   "code": "EXA-11",
@@ -2574,7 +2574,7 @@ HC.meta.sources.push(...[
   "version": "UA v0.1",
   "en": "—",
   "status": "Чернетка на перегляді (12.11.2026)",
-  "url": "https://docs.google.com/document/d/1H75RSYs0Q0l7h44C-AWz5pVSnyYOxzUMTBSeqdQCg6s/edit"
+  "url": ""
  }
 ]);
 HC.meta.updated = '12.11.2026';
